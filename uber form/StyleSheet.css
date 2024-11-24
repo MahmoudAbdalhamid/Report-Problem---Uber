@@ -1,0 +1,183 @@
+﻿/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 16px;
+}
+
+
+.container {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); /* Box shadow added here */
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8c200;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #e6b100;
+    }
+
+textarea {
+    resize: none;
+}
+
+.success-message {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+}
+
+    footer p {
+        margin: 0;
+    }
+
+/* Uber logo styles */
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.uber-logo {
+    position: relative;
+    top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens (phones in portrait mode) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Slightly smaller font on small screens */
+    }
+
+    .container {
+        padding: 20px; /* Reduce padding */
+        width: 90%; /* Ensure it takes full width */
+    }
+
+    .uber-logo {
+        width: 120px; /* Smaller logo for smaller screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller heading font */
+    }
+
+    input, textarea, select, button {
+        font-size: 14px; /* Smaller font size for form inputs */
+        padding: 8px; /* Smaller padding for input fields */
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* For medium screens (tablets or small laptops) */
+@media (max-width: 768px) {
+    .container {
+        width: 85%; /* Slightly larger container on medium devices */
+    }
+
+    .uber-logo {
+        width: 130px; /* Adjust logo size for tablets */
+    }
+
+    h1 {
+        font-size: 22px; /* Adjust heading size */
+    }
+
+    input, textarea, select, button {
+        font-size: 15px; /* Slightly bigger font size */
+        padding: 9px; /* Padding adjustments */
+    }
+
+    button {
+        font-size: 15px;
+    }
+}
+
+/* For large screens (desktops and above) */
+@media (min-width: 1024px) {
+    .container {
+        width: 60%; /* Larger container on desktops */
+    }
+
+    .uber-logo {
+        width: 150px; /* Keep logo size for large screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Heading font size */
+    }
+
+    input, textarea, select, button {
+        font-size: 16px; /* Default font size for large screens */
+    }
+}
